@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iris-Flower-Detection</title>
+    </head>
+    <body bgcolor=#ab0083>
+        <div style="background-color: #de7cc7; margin: 150px 300px; border-radius: 5px;">
+            <center>
+                <h1>  PREDICTION :  </h1>
+                {%if data == 0%}
+                <h1>Iris-setosa</h1>  
+                <img src='../static/setosa.jpg'>  
+                {%else%}
+                <h1>Iris-versicolor</h1>
+                <img src='../static/verci.jpg'>
+                {%endif%}
+                <br><br>
+                <a href='/'>Go back to Home page</a>
+            </center>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iris-Flower-Detection</title>
+    </head>
+    <body bgcolor=#940043>
+        <center>
+            <div style="background-color: #d980a8; margin: 150px 300px; border-radius: 5px;">
+                <h1> IRIS FLOWER DETECTION </h1>
+                <br>
+                <form method="POST", action="{{url_for('home')}}">
+                    <b> 
+                        Length of sepal(cm) :  <input type="text", name='a', placeholder="enter 1"> 
+                        <br><br>
+                        Width of sepal(cm) :  <input type="text", name='b', placeholder="enter 2"> 
+                        <br><br>
+                        Length of petal(cm) :  <input type="text", name='c', placeholder="enter 3"> 
+                        <br><br>
+                        Width of petal(cm) : <input type="text", name='d', placeholder="enter 4"> 
+                        <br><br><br>
+                    </b>
+                    <input type="submit", value='Predict!'>
+                </form>
+            </div>
+        </center>
+    </body>
+</html>
